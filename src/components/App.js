@@ -1,15 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const StyledDiv = styled.div`
-  background-color: #a15d27;
-`;
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from '../pages/Home';
+import Layout from '../components/Layout';
 
 const App = () => {
   return (
-    <StyledDiv>
-      <h1>Hola mundo</h1>
-    </StyledDiv>
+    <div className='App'>
+      <Router>
+        <Layout>
+          <Switch>
+            <Route exact path='/'>
+              <Home />
+            </Route>
+          </Switch>
+        </Layout>
+      </Router>
+    </div>
   );
 };
 
