@@ -7,8 +7,8 @@ import Page from '../container/Page';
 import Loading from '../components/Loading';
 import GraficBarNivo from '../components/GraficBarNivo';
 /* import Dropdown from '../components/DropDown';
-import Report from '../components/Report';
-import ProjectList from '../components/ProjectList'; */
+import Report from '../components/Report'; */
+import ProjectList from '../components/ProjectList';
 
 /* const ContFilter = styled.section`
   ${FlexMixin}
@@ -59,7 +59,7 @@ const Home = () => {
         <h3> Grafica de avance de obras en la república mexicana </h3>
       </Title>
       <GraficBarNivo graficData={data.reportesConnection.values} />
-      {/* <ProjectList info={data.reportesConnection.values} /> */}
+      <ProjectList info={data.reportesConnection.values} />
     </Page>
   );
 };

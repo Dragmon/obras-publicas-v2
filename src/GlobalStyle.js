@@ -3,7 +3,7 @@ import RobotoRegular from './assets/fonts/Roboto-Regular.woff';
 import RobotoBold from './assets/fonts/Roboto-Bold.woff';
 import RubikRegular from './assets/fonts/Rubik-Regular.woff';
 import RubikMediumd from './assets/fonts/Rubik-Medium.woff';
-/* import 'antd/dist/antd.css'; */
+import 'antd/dist/antd.css';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
