@@ -13,8 +13,8 @@
     "format": "prettier src/ --write"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Carlos Gerardo Pérez Horta",
+  "license": "MIT",
   "dependencies": {
     "@apollo/client": "^3.3.12",
     "@nivo/bar": "^0.67.0",
