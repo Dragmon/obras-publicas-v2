@@ -1,10 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Header = styled.header`
-  text-align: center;
-  margin: 30px 0;
-`;
+import { Header } from '../styles/Header';
 
 const index = () => (
   <Header>

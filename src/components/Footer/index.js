@@ -1,17 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import { FlexMixin } from '../styles/Mixins';
-
-const Footer = styled.footer`
-  ${FlexMixin}
-  justify-content: center;
-  height: 50px;
-  width: 100%;
-  background-color: #025456;
-  & p {
-    color: #fff;
-  }
-`;
+import { Footer } from '../styles/Footer';
 
 const index = () => (
   <Footer>
