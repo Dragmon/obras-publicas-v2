@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FlexMixin } from '../styles/Mixins';
 
-const Footer = styled.section`
+const Footer = styled.footer`
   ${FlexMixin}
   justify-content: center;
   height: 50px;

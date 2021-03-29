@@ -1,10 +1,11 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import Footer from '../../components/Footer/index';
 
 describe('<Footer />', () => {
   test('Render del componente Footer', () => {
-    const footer = mount(<Footer />);
+    const footer = shallow(<Footer />);
     expect(footer.length).toEqual(1);
+    expect(footer.find('Footer > div > p').length).toEqual(1);
   });
 });
