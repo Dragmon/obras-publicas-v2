@@ -73,6 +73,10 @@
   "jest": {
     "setupFilesAfterEnv": [
       "<rootDir>/src/__test__/setupTest.js"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(woff)$": "<rootDir>/src/__mocks__/fileMocks.js",
+      "\\.(css)$": "<rootDir>/src/__mocks__/stylesMocks.js"
+    }
   }
 }
