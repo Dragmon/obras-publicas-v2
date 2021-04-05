@@ -59,6 +59,10 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.png/,
+        type: 'assets/images',
+      },
     ],
   },
   plugins: [

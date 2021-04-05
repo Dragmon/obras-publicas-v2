@@ -18,12 +18,11 @@ const index = (props) => {
   if (data) {
     const arrayData = data.ctCoordinacionRegionals[0].reportes;
     console.log('arrayData', arrayData);
-    return (
-      <>
-        {/* <GraficBarNivo graficData={arrayData} /> */}
-        <WorkCard data={arrayData} />
-      </>
-    );
+    if (arrayData.length > 0) {
+      return <WorkCard data={arrayData} />;
+    } else {
+      return <h1>No hay datos que mostar</h1>;
+    }
   }
 };
 
