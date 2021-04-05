@@ -22,8 +22,6 @@ const index = (data) => {
   dataArray.push(progressArray);
   dataArray.push(remaningArray);
 
-  console.log('dataArray', dataArray);
-
   return (
     <ContGraphic>
       <ResponsivePie
