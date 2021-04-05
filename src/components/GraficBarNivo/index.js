@@ -22,7 +22,6 @@ const theme = {
 };
 
 const index = (parm) => {
-  console.log('parm', parm);
   const myData = parm.graficData;
   const dataArray = [];
 
@@ -33,8 +32,6 @@ const index = (parm) => {
     objectArray.labels = `${objectArray.id} - ${element.ct_tramo_carretero.nombre}`;
     dataArray.push(objectArray);
   });
-
-  console.log('dataArray', dataArray);
 
   return (
     <ContGraphic>

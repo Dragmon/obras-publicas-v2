@@ -5,13 +5,8 @@ import PropTypes from 'prop-types';
 function DropDown(props) {
   const infoData = props.dataFilter;
   const { Option } = Select;
-  console.log('dataFilter', infoData);
 
-  /* function onChange(value) {
-    console.log(`selected ${value}`);
-  } */
   function handleChangeCoordination(option) {
-    console.log('option', option);
     props.onChange(option);
   }
 
