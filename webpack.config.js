@@ -62,7 +62,7 @@ module.exports = {
       },
       {
         test: /\.png/,
-        type: 'assets/images',
+        type: 'asset/resource',
       },
     ],
   },
