@@ -1,4 +1,4 @@
-# Site Obras Publicas Create React App
+# Site Obras Publicas
 
 ## Available Scripts
 
@@ -13,6 +13,14 @@ Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### `npm build`
+
+Generate files for the production environment
+
+### `npm test`
+
+Run tests on project components
 
 ## API
 
@@ -125,14 +133,11 @@ query getReportCoordination($name: String!) {
 - GraphQL
 - [Apollo Client](https://www.apollographql.com/docs/react/)
 - [Nivo](https://nivo.rocks/)
-- [Viser](https://viserjs.gitee.io/)
 - [Styled Components](https://styled-components.com/)
 - Eslint
 - Prettier
 - [Standart](https://standardjs.com/)
 - Husky
-
-## Analyzer used
-
-npx webpack --profile --json > stats.json
-npx webpack-bundle-analyzer stats.json
+- [JEST](https://jestjs.io/)
+- [enzyme](https://enzymejs.github.io/enzyme/)
+- @wojtekmaj/enzyme-adapter-react-17

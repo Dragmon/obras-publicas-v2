@@ -16,6 +16,10 @@ export const DataCard = styled(Card)`
 `;
 export const TitleCard = styled.h3`
   color: ${(props) => props.theme.colors.purple};
+  font-size: 1.5em;
+  @media (min-width: ${(props) => props.theme.sizeDevice.md}) {
+    font-size: 2em;
+  }
 `;
 export const DataParagraph = styled.p`
   font-size: ${(props) => props.theme.fontSizes.mSmall};

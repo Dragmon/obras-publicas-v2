@@ -10,6 +10,7 @@ import Report from '../components/Report';
 import ProjectList from '../components/ProjectList';
 
 const Home = () => {
+  const widthDevice = window.innerWidth;
   const { loading, error, data } = useQuery(FirstData);
   const [selectCoordinacion, setCoordination] = useState('');
 
@@ -33,10 +34,16 @@ const Home = () => {
         <Report parm={selectCoordinacion} />
       ) : (
         <>
-          <Title>
-            <h3> Grafica de avance de obras en la república mexicana </h3>
-          </Title>
-          <GraficBarNivo graficData={data.reportesConnection.values} />
+          {widthDevice >= 768 ? (
+            <>
+              <Title>
+                <h3> Grafica de avance de obras en la república mexicana </h3>
+              </Title>
+              <GraficBarNivo graficData={data.reportesConnection.values} />
+            </>
+          ) : (
+            ''
+          )}
           <ProjectList info={data.reportesConnection.values} />
         </>
       )}
