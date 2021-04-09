@@ -1,4 +1,4 @@
-export const mocks = [
+/* export const mocks = [
   {
     request: {
       query: GET_REPORTS_CONECTION,
@@ -24,4 +24,4 @@ export const mocks = [
       },
     },
   },
-];
+]; */
