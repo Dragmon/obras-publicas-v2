@@ -9,18 +9,22 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Roboto Regular';
     src: url(${RobotoRegular}) format('truetype');
+    font-display: swap;
   }
   @font-face {
     font-family: 'Roboto Bold';
     src: url(${RobotoBold}) format('truetype');
+    font-display: swap;
   }
   @font-face {
     font-family: 'Rubik Regular';
     src: url(${RubikRegular}) format('truetype');
+    font-display: swap;
   }
   @font-face {
     font-family: 'Rubik Mediumd';
     src: url(${RubikMediumd}) format('truetype');
+    font-display: swap;
   }
   body{
     font-family:'Rubiki Regular';
