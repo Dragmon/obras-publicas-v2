@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
+/* import Header from '../Header';
+import Footer from '../Footer'; */
 
 const index = ({ children }) => (
   <>
-    <Header />
+    {/* <Header /> */}
     {children}
-    <Footer />
+    {/* <Footer /> */}
   </>
 );
 
